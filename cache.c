@@ -128,6 +128,7 @@ int delete_file(file_t *file, cache_t *cache){
 
 	cache->size -= file->size;
 	free_file(file);
+	return 1;
 }
 
 void check_cache(cache_t *cache){
